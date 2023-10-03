@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationary Shop Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Stationary Shop Inventory Management</h2>
+
+<form id="inventoryForm">
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" rows="3"></textarea>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" required>
+
+    <button type="button" onclick="addItem()">Add Item</button>
+</form>
+
+<table id="inventoryTable">
+    <tr>
+        <th>Item Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Action</th>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
